@@ -6,6 +6,8 @@
 
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+
 	<link rel="stylesheet" href="style.css">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -16,31 +18,36 @@
 	<header>
 		<div id="name">
 			<h1>Jasmina Kruhak</h1>
+			<ul>
+				<li>Zagreb, Croatia</li>
+				<li>Skype id: jkruhak</li>
+			</ul>
 		</div>
 
 		<div id="navigation">
-	
 			<ul>
-				<li><a href="#aboutHead">ABOUT</a></li>
-				<li><a href="#resumeHead">RESUME</a></li>
-				<li><a href="#portfolioHead">PORTFOLIO</a></li>
+				<li><a class="navButton" id="aboutButton" href="#aboutTop">ABOUT</a></li>
+				<li><a class="navButton" id="resumeButton" href="#resumeTop">RESUME</a></li>
+				<li><a class="navButton" id="portfolioButton" href="#portfolioTop">PORTFOLIO</a></li>
 			</ul>
 		</div>
 	</header>
 
-	<section>
+	<div id="main">
 		<div id="about">	
-			<h1><span id="aboutHead"></span>ABOUT</h1>
-			<p> </p>
+			<h1><span id="aboutTop"></span>ABOUT</h1>
+			<p>Hi! My name is Jasmina and I am an aspiring Front End Developer. As a recent graduate of <a href="http://www.thinkful.com" target="_blank">Thinkful.com</a>, I have studied HTML, CSS, jQuery, JavaScript, and Ajax.</p>
 		</div>
 
 		<div id="resume">
-			<h1><span id="resumeHead"></span>RESUME</h1>
-			<p> </p>
+			<h1><span id="resumeTop"></span>RESUME</h1>
+			<p>I have a 9-year background in the telecom industry, working for a global company, first as a service engineer and then as a customer project manager.</p>
+			<p>As a service engineer, I have worked on different telecom systems with operators ranging from startups to global companies.</p>
+			<p>As a customer project manager, </p>
 		</div>
 		
 		<div id="portfolio">
-			<h1><span id="portfolioHead"></span>PORTFOLIO</h1>
+			<h1><span id="portfolioTop"></span>PORTFOLIO</h1>
 			
 				<div id="shoppingList" class="projects projectHover">
 				<!-- Shopping List -->
@@ -116,7 +123,7 @@
 				</div>
 		
 		</div>
-	</section>
+	</div>
 
 	<footer>
 		<!-- contains contact information - gmail, github, linkedin -->
