@@ -16,31 +16,18 @@ header, #name, #navigation, #main, #about, #resume, #portfolio, #shoppingList, #
 	color: blue;
 }
 
-h1 span {
+#main h1 {
+	margin-left: 10px;
+}
+
+#main h1 span {
 	position: absolute;
 	top: -150px;
 }
 
-.headingAnimation {
-	-webkit-animation-duration: 1s;
-	-webkit-animation-name: slideup;
-}
-
-@-webkit-keyframes slideup {
-	from {
-		margin-bottom: 100%;
-		width: 300%;
-	}
-
-	to {
-		margin-top: 2.2%;
-		width: 100%;
-	}
-}
-
 html {
 	background-color: #59546B;
-	background-image: url(images/backgroundMain.JPG);
+	background-image: url(images/backgroundMain.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -103,7 +90,7 @@ header {
 }
 
 #about {
-	height: 200px;
+	height: 300px;
 }
 
 #about p, #resume p {
@@ -113,7 +100,6 @@ header {
 
 #resume {
 	height: 300px;
-
 }
 
 #portfolio {
