@@ -8,19 +8,21 @@
 
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
 
+	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+<div id="container">
 	
 	<header>
 		<div id="name">
 			<h1>Jasmina Kruhak</h1>
 			<ul>
 				<li>Zagreb, Croatia</li>
-				<li>Skype id: jkruhak</li>
+				<li>Skype: jkruhak</li>
 			</ul>
 		</div>
 
@@ -35,97 +37,105 @@
 
 	<div id="main">
 		<div id="about">	
-			<h1><span id="aboutTop"></span>ABOUT</h1>
+			<h1><span id="aboutTop"></span>About</h1>
 			<p>Hi! My name is Jasmina and I am an aspiring Front End Developer.</p>
-			<p>As a recent graduate of <a href="http://www.thinkful.com" target="_blank">Thinkful.com</a>, I have studied HTML, CSS, jQuery, JavaScript, and Ajax.</p>
+			<p>As a recent graduate of <a href="http://www.thinkful.com" target="_blank">Thinkful.com</a>, I have studied HTML, CSS, jQuery, JavaScript, and Ajax. Take a look at some of the projects I have worked on in the Portfolio section.</p>
 			<p>Originally Croatian/Serbian, I have lived in the Middle East for the past 22 years, with a five year break during which time I was getting my Bachelor's degree in the US. I then returned to the Middle East where I worked and traveled around the region.</p>
 			<p>Living and working in the Middle East has given me an opportunity to meet people from different backgrounds and cultures.</p>
 		</div>
 
 		<div id="resume">
-			<h1><span id="resumeTop"></span>RESUME</h1>
+			<h1><span id="resumeTop"></span>Resume</h1>
 			<p>After graduating from Northern Michigan University with a Bachelor's degree in Computer Information Systems, I moved to Oman and started my career in the telecom industry, where I spent 9 years working as a service engineer.</p>
 			<p>As a service engineer, I have worked with greenfield operators as well as global operators to help them develop and expand their solutions that would best serve their customers.</p>
 			<p>After 9 years of working as an engineer, I wanted to expand my knowledge and made a move to project management. </p>
 		</div>
-		
+
 		<div id="portfolio">
-			<h1><span id="portfolioTop"></span>PORTFOLIO</h1>
-			
+			<h1><span id="portfolioTop"></span>Portfolio</h1>
+			<p class="background">Here are some of the projects I have worked on during my Thinkful time.</p>
+				<div id="projectList">
 				<div id="shoppingList" class="projects projectHover">
 				<!-- Shopping List -->
-				<img src="images/shopping.png" alt="Shopping List App image">
+				<img src="images/shopping.png" alt="Shopping List App image" id="projectOne">
 					<div class="change"></div>
 					<div class="content">
 						<h2>Shopping List</h2>
-						<p>App to help you remember all your groceries on your next
+						<p class="code">App to help you remember all your groceries on your next
 						shopping trip.</p>
-						<a href="http://jkruhak.github.io/shoppingListApp/main.html" target="_blank" class="info">Link to Project</a>
-						<p>HTML5, CSS, jQuery, JavaScript</p>
+						<a class="info" id="projectOneInternal"><span>Internal link</span></a>
+						<p class="code">HTML5, CSS, jQuery, JavaScript</p>
 					</div>
 				</div>
 
 				<div id="fizzBuzz" class="projects projectHover">
 				<!-- Fizz Buzz -->
-				<img src="images/fizzBuzz.png" alt="FizzBuzz image">
+				<img src="images/fizzBuzz2.png" alt="FizzBuzz image" class="imageHover" id="projectTwo">
 					<div class="change"></div>
 					<div class="content">
 						<h2>Fizz Buzz</h2>
-						<p>A simple app that returns a list of numbers based on the input. If it is divisible by 3, it will return "fizz". If it is divisible by 5, it will return "buzz". If it is divisible by both 3 and 5, it will return "fizz buzz".</p>
-						<a href="http://jkruhak.github.io/FizzBuzz2/main.html" target="_blank" class="info">Link to Project</a>
+						<p>A simple app that outputs phrases or numbers based on the input.</p>
+						<a class="info" id="projectTwoInternal"><span>Internal link</span></a>
 						<p>HTML5, CSS, jQuery, JavaScript</p>
 					</div>
 				</div>
 
 				<div id="hotOrCold" class="projects projectHover">
 				<!-- Hot or Cold App -->
-				<img src="images/hotOrCold.png" alt="Hot or Cold App image">
+				<img src="images/hotOrCold2.png" alt="Hot or Cold App image" id="projectThree">
 					<div class="change"></div>
 					<div class="content">
 						<h2>Hot or Cold</h2>
 						<p>You against the computer. See how many tries it takes you to guess the number computer has chosen.</p>
-						<a href="http://jkruhak.github.io/hot-or-cold-app/index.html" target="_blank" class="info">Link to Project</a>
+						<a class="info" id="projectThreeInternal"><span>Internal link</span></a>
 						<p>HTML5, CSS, jQuery, JavaScript</p>
 					</div>
 				</div>
 				
 				<div id="quiz" class="projects projectHover">
 				<!-- MASH Quiz -->
-				<img src="images/mash.png" alt="MASH Quiz image">
+				<img src="images/mash.png" alt="MASH Quiz image" id="projectFour">
 					<div class="change"></div>
 					<div class="content">
 						<h2>M*A*S*H Quiz</h2>
 						<p>A quiz to test your M*A*S*H knowledge.</p>
-						<a href="http://jkruhak.github.io/quizApp/index.html" target="_blank" class="info">Link to Project</a>
+						<a class="info" id="projectFourInternal"><span>Internal link</span></a>
 						<p>HTML5, CSS, jQuery, JavaScript</p>
 					</div>
 				</div>
 
 				<div id="stackoverflow" class="projects projectHover">
 				<!-- Stackoverflow API -->
-				<img src="images/topAnswerers.png" alt="Stackoverflow Top Answerers image">
+				<img src="images/topAnswerers.png" alt="Stackoverflow Top Answerers image" id="projectFive">
 					<div class="change"></div>
 					<div class="content">
 						<h2>Stackoverflow Top Answerers</h2>
 						<p>Get top answerers for a topic of your choice from Stackoverflow.</p>
-						<a href="http://jkruhak.github.io/topAnswerers/index.html" target="_blank" class="info">Link to Project</a>
+						<a class="info" id="projectFiveInternal"><span>Internal link</span></a>
 						<p>Ajax</p>
 					</div>
 				</div>
 
 				<div id="weatherStation" class="projects projectHover">
 				<!-- Weather Station -->
-				<img src="images/weather.png" alt="Weather Station API image">
+				<img src="images/weather.png" alt="Weather Station API image" id="projectSix">
 					<div class="change"></div>
 					<div class="content">
 						<h2>Weather Station</h2>
 						<p>Get weather from anywhere in the world with this Weather Station API. </p>
-						<a href="http://jkruhak.github.io/apiHack/index.html" target="_blank" class="info">Link to Project</a>
+						<a class="info" id="projectSixInternal"><span>Internal link</span></a>
 						<p>Ajax</p>
 					</div>
 				</div>
-		
-		</div>
+			</div>
+			<div id="loadedProject">
+				<div id="headerProject">
+					<div id="projectName"></div>
+				</div>
+				
+				<div id="projectLoaded"></div>
+			</div>
+		</div>		
 	</div>
 
 	<footer>
@@ -134,6 +144,6 @@
 		<a href="https://www.linkedin.com/pub/jasmina-kruhak/20/677/818" target="_blank"><img src="images/linkedin.png" alt="Linkedin link image"></a>
 		<a href="mailto:jkruhak@gmail.com"><img src="images/gmail.png" alt="Gmail link image"></a>
 	</footer>
-
+</div>
 </body>
 </html>

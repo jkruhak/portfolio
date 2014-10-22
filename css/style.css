@@ -4,6 +4,10 @@ header, #name, #navigation, #main, #about, #resume, #portfolio, #shoppingList, #
 	/*border: 1px solid black;*/
 }
 
+h1 {
+	font-size: 2em;
+}
+
 .navButton {
 	text-decoration: none;
 }
@@ -18,6 +22,7 @@ header, #name, #navigation, #main, #about, #resume, #portfolio, #shoppingList, #
 
 #main h1 {
 	margin-left: 10px;
+	text-transform: uppercase;
 }
 
 #main h1 span {
@@ -27,7 +32,7 @@ header, #name, #navigation, #main, #about, #resume, #portfolio, #shoppingList, #
 
 html {
 	background-color: #59546B;
-	background-image: url(images/backgroundMain.JPG);
+	background-image: url(images/backgroundZupanija.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -35,14 +40,15 @@ html {
 }
 
 header {	
-	position: fixed;
+/*	position: fixed;
+margin-top: -160px;*/
 	border: 1px solid black;
-	margin-left: -9px;
-	margin-top: -170px;
+	margin-left: -1px;
+	
 	height: 150px;
 	width: 100%;
 	background-color: #fff;
-	z-index: 1;
+	z-index: 2;
 	background: rgba(255, 255, 255, 0.9);
 }
 
@@ -52,7 +58,7 @@ header {
 
 #name ul {
 	list-style: none;
-	margin-top: -20px;
+	margin-top: 10px;
 }
 
 #name ul li {
@@ -66,7 +72,7 @@ header {
 	float: right;
 	height: 40px;
 	margin-left: 20px;
-	margin-top: -7px;
+	margin-top: 23px;
 }
 
 #navigation ul {
@@ -81,9 +87,14 @@ header {
 	font-size: 1.5em;
 }
 
+#main p, #resume p, #portfolio p {
+	margin-top: 10px;
+}
+
 #main {
 	margin: 0 auto;
-	margin-top: 150px;
+	/*margin-top: 160px;*/
+	margin-top: 15px;
 	width: 1000px;
 	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
@@ -93,9 +104,10 @@ header {
 	height: 300px;
 }
 
-#about p, #resume p {
+#about p, #resume p, .background {
 	font-size: 20px;
 	margin-left: 25px;
+	padding-bottom: 10px;
 }
 
 #resume {
@@ -103,30 +115,18 @@ header {
 }
 
 #portfolio {
-	height: 750px;
+	height: 915px;
 }
 
 .projects {
-	border: 3px solid #BBC7C5;
 	float: left;
-	margin-top: 25px;
-	margin-left: 12px;
-	margin-right: 12px;
+	margin: 50px 14px 15px 14px;
 	width: 300px;
 	height: 300px;
 	overflow: hidden;
 	box-shadow: 1px 1px 2px #e6e6e6;
-	text-align: center;
+	
 	background: #fff no-repeat center center;
-}
-
-.projects .change, .projects .content {
-	width: 300px;
-	height: 300px;
-	position: absolute;
-	overflow: hidden;
-	top: 0;
-	left: 0;
 }
 
 .projects img {
@@ -136,58 +136,71 @@ header {
 	position: relative;
 }
 
-.projects h2 {
-    position: relative;
-    color: #fff;
-    font-size: 17px;
-    
-    padding: 10px;
-    text-align: center;
-    background: #000;
-    opacity: 0.8;
-    margin: 20px 0 0 0;
-}
-
-.projects p {
-    font-size: 18px;
-    position: relative;
-    color: #fff;
-    padding: 0px 20px 0px;
-    text-align: center;
-}
-
-.projects p:nth-child(4) {
-	font-size: 12px;
-}
-
-.projects a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    box-shadow: 0 0 1px #000;
-}
-
-.projects a.info:hover {
-    box-shadow: 0 0 5px #000;
-}
-
 footer {
 	position: absolute;
-	margin-left: -9px;
-	height: 75px;
+	height: 85px;
 	width: 100%;
-	background-color: #fff;
+	background-color: rgb(214, 214, 214);
 	text-align: center;
+	margin-top: 15px;
+	padding-top: 4px;
 }
 
 footer img {
+	margin-top: 5px;
 	height: 75px;
 	width: 75px;
 }
 
+/*--- Loaded Project---*/
+#loadedProject, #headerProject, .xImage, #projectName, #projectLoaded, #xMark {
+	position: relative;
+	/*border: 1px solid black;*/
+}
+
+#loadedProject {
+	margin-top: 5px;
+	height: 735px;
+	background-color: white;
+}
+
+#headerProject {
+	position: relative;
+	height: 35px;
+	width: 100%;
+}
+
+#xMark {
+	height: 30px;
+	width: 30px;
+	float: right;
+	padding-top: 2px;
+	padding-right: 40px;
+}
+
+#projectName {
+	height: 35px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-align: center;
+	z-index: 1;
+}
+
+#projectLoaded {
+	height: 735px;
+}
+
+object {
+	width: 100%;
+	height: 800px;
+}
+
 /*--- Hover effects ---*/
+span {
+	cursor: pointer;
+}
+
 .projectHover img {
 	transition: all 0.2s ease-in;
 }
@@ -203,6 +216,7 @@ footer img {
 }
 
 .projectHover h2 {
+
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     font-family: Raleway, serif;
     background: transparent;
@@ -219,10 +233,10 @@ footer img {
 
 .projectHover a.info { 
     transform: translate(0px, 500px);
-    transition: all 0.2s 0.1s ease-in-out;   
+    transition: all 0.2s 0.1s ease-in-out;
 }
 
-.projectHover:hover h2, .projectHover:hover p, .projectHover:hover a.info { 
+.projectHover:hover h2, .projectHover:hover p, .projectHover:hover a.info {
     transform: translate(0px,0px);
     transition-delay: 0.2s;    
 }
@@ -230,4 +244,48 @@ footer img {
 .projectHover:hover .change { 
     opacity:1; 
     transform: translate(-80px, -125px) rotate(45deg);
+    -webkit-transform: translate(-80px, -125px) rotate(45deg);
+}
+
+.projects .change, .projects .content {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+.projects h2 {
+    position: relative;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+    margin: 20px 0 0 0;
+}
+
+.projects p {
+    position: relative;
+    padding: 0px 20px 0px;
+    font-size: 18px;
+    font-style: italic;
+    color: #fff;	
+}
+
+.projects a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    box-shadow: 0 0 1px #000;
+	margin-top: 25px;
+}
+
+.projects a.info:hover {
+    box-shadow: 0 0 5px #000;
 }
