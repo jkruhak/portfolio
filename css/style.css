@@ -32,7 +32,7 @@ h1 {
 
 html {
 	background-color: #59546B;
-	background-image: url(images/backgroundZupanija.jpg);
+	background-image: url(../images/backgroundZupanija.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
