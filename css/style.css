@@ -1,5 +1,5 @@
 header, #name, #navigation, #main, #about, #resume, #portfolio, #shoppingList, #fizzBuzz, #hotOrCold,
-#quiz, #stackoverflow, #weatherStation, footer, #rowOne, #rowTwo, h1 {
+#quiz, #stackoverflow, #weatherStation, footer, #rowOne, #rowTwo, h1, h3 {
 	position: relative;
 	/*border: 1px solid black;*/
 }
@@ -8,16 +8,23 @@ h1 {
 	font-size: 2em;
 }
 
+h3 {
+	font-size: 1.17em;
+}
 .navButton {
 	text-decoration: none;
 }
 
-.navButton:link {
+.navButton:link, #thinkful:link {
 	color: #000;
 }
 
-.navButton:hover {
+.navButton:hover, #thinkful:hover {
 	color: blue;
+}
+
+#thinkful:visited {
+	color: #fff;
 }
 
 #main h1 {
@@ -27,7 +34,7 @@ h1 {
 
 #main h1 span {
 	position: absolute;
-	top: -150px;
+	top: -25px;
 }
 
 html {
@@ -54,6 +61,7 @@ margin-top: -160px;*/
 
 #name {
 	text-align: center;
+	margin-top: 15px;
 }
 
 #name ul {
@@ -72,7 +80,7 @@ margin-top: -160px;*/
 	float: right;
 	height: 40px;
 	margin-left: 20px;
-	margin-top: 23px;
+	margin-top: 8px;
 }
 
 #navigation ul {
@@ -125,7 +133,6 @@ margin-top: -160px;*/
 	height: 300px;
 	overflow: hidden;
 	box-shadow: 1px 1px 2px #e6e6e6;
-	
 	background: #fff no-repeat center center;
 }
 
@@ -136,13 +143,34 @@ margin-top: -160px;*/
 	position: relative;
 }
 
+.backToTop {
+    position: fixed;
+    bottom: 1.5em;
+    right: 10px;
+    text-decoration: none;
+    color: #000;
+    background-color: rgba(235, 235, 235, 0.8);
+    font-size: 12px;
+    padding: 0.5em;
+    display: none;
+}
+
+.backToTop:hover {
+	background-color: rgba(135, 135, 135, 0.5);
+}
+
+.backToTop img {
+	width: 50px;
+	height: 50px;
+}
+
 footer {
 	position: absolute;
 	height: 85px;
 	width: 100%;
 	background-color: rgb(214, 214, 214);
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 35px;
 	padding-top: 4px;
 }
 
@@ -153,14 +181,14 @@ footer img {
 }
 
 /*--- Loaded Project---*/
-#loadedProject, #headerProject, .xImage, #projectName, #projectLoaded, #xMark {
+#loadedProject, #headerProject, button, #projectName, #projectLoaded {
 	position: relative;
 	/*border: 1px solid black;*/
 }
 
 #loadedProject {
-	margin-top: 5px;
-	height: 735px;
+	margin-top: 25px;
+	height: 866px;
 	background-color: white;
 }
 
@@ -170,30 +198,44 @@ footer img {
 	width: 100%;
 }
 
-#xMark {
+button {
+	font-family: Ubuntu, serif;
+	font-size: 18px;
 	height: 30px;
-	width: 30px;
 	float: right;
-	padding-top: 2px;
-	padding-right: 40px;
+	margin-top: -30px;
 }
 
 #projectName {
-	height: 35px;
+	height: 85px;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	text-align: center;
 	z-index: 1;
+	margin-top: 5px;
+}
+
+#projectName p {
+	font-style: italic;
 }
 
 #projectLoaded {
-	height: 735px;
+	margin-top: 50px;
+	height: 800px;
 }
 
 object {
 	width: 100%;
-	height: 800px;
+	height: 780px;
+}
+
+#xMark {
+	height: 40px;
+	width: 40px;
+	float: right;
+	margin-top: -50px;
+	z-index: 0;
 }
 
 /*--- Hover effects ---*/
@@ -268,12 +310,13 @@ span {
     margin: 20px 0 0 0;
 }
 
-.projects p {
+.content p {
     position: relative;
-    padding: 0px 20px 0px;
+    padding: 60px 0px 20px 0px;
     font-size: 18px;
     font-style: italic;
-    color: #fff;	
+    color: #fff;
+
 }
 
 .projects a.info {
@@ -283,7 +326,8 @@ span {
     background: #000;
     color: #fff;
     box-shadow: 0 0 1px #000;
-	margin-top: 25px;
+	margin-top: 100px;
+
 }
 
 .projects a.info:hover {

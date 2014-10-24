@@ -39,7 +39,7 @@
 		<div id="about">	
 			<h1><span id="aboutTop"></span>About</h1>
 			<p>Hi! My name is Jasmina and I am an aspiring Front End Developer.</p>
-			<p>As a recent graduate of <a href="http://www.thinkful.com" target="_blank">Thinkful.com</a>, I have studied HTML, CSS, jQuery, JavaScript, and Ajax. Take a look at some of the projects I have worked on in the Portfolio section.</p>
+			<p>As a recent graduate of <a href="http://www.thinkful.com" target="_blank" id="thinkful">Thinkful.com</a>, I have studied HTML, CSS, jQuery, JavaScript, and Ajax. Take a look at some of the projects I have worked on in the Portfolio section.</p>
 			<p>Originally Croatian/Serbian, I have lived in the Middle East for the past 22 years, with a five year break during which time I was getting my Bachelor's degree in the US. I then returned to the Middle East where I worked and traveled around the region.</p>
 			<p>Living and working in the Middle East has given me an opportunity to meet people from different backgrounds and cultures.</p>
 		</div>
@@ -53,17 +53,16 @@
 
 		<div id="portfolio">
 			<h1><span id="portfolioTop"></span>Portfolio</h1>
+			<div id="projectList">
 			<p class="background">Here are some of the projects I have worked on during my Thinkful time.</p>
-				<div id="projectList">
+				
 				<div id="shoppingList" class="projects projectHover">
 				<!-- Shopping List -->
 				<img src="images/shopping.png" alt="Shopping List App image" id="projectOne">
 					<div class="change"></div>
 					<div class="content">
 						<h2>Shopping List</h2>
-						<p class="code">App to help you remember all your groceries on your next
-						shopping trip.</p>
-						<a class="info" id="projectOneInternal"><span>Internal link</span></a>
+						<a class="info" id="projectOneInternal"><span>View</span></a>
 						<p class="code">HTML5, CSS, jQuery, JavaScript</p>
 					</div>
 				</div>
@@ -74,8 +73,7 @@
 					<div class="change"></div>
 					<div class="content">
 						<h2>Fizz Buzz</h2>
-						<p>A simple app that outputs phrases or numbers based on the input.</p>
-						<a class="info" id="projectTwoInternal"><span>Internal link</span></a>
+						<a class="info" id="projectTwoInternal"><span>View</span></a>
 						<p>HTML5, CSS, jQuery, JavaScript</p>
 					</div>
 				</div>
@@ -86,8 +84,7 @@
 					<div class="change"></div>
 					<div class="content">
 						<h2>Hot or Cold</h2>
-						<p>You against the computer. See how many tries it takes you to guess the number computer has chosen.</p>
-						<a class="info" id="projectThreeInternal"><span>Internal link</span></a>
+						<a class="info" id="projectThreeInternal"><span>View</span></a>
 						<p>HTML5, CSS, jQuery, JavaScript</p>
 					</div>
 				</div>
@@ -98,8 +95,7 @@
 					<div class="change"></div>
 					<div class="content">
 						<h2>M*A*S*H Quiz</h2>
-						<p>A quiz to test your M*A*S*H knowledge.</p>
-						<a class="info" id="projectFourInternal"><span>Internal link</span></a>
+						<a class="info" id="projectFourInternal"><span>View</span></a>
 						<p>HTML5, CSS, jQuery, JavaScript</p>
 					</div>
 				</div>
@@ -110,8 +106,7 @@
 					<div class="change"></div>
 					<div class="content">
 						<h2>Stackoverflow Top Answerers</h2>
-						<p>Get top answerers for a topic of your choice from Stackoverflow.</p>
-						<a class="info" id="projectFiveInternal"><span>Internal link</span></a>
+						<a class="info" id="projectFiveInternal"><span>View</span></a>
 						<p>Ajax</p>
 					</div>
 				</div>
@@ -122,8 +117,7 @@
 					<div class="change"></div>
 					<div class="content">
 						<h2>Weather Station</h2>
-						<p>Get weather from anywhere in the world with this Weather Station API. </p>
-						<a class="info" id="projectSixInternal"><span>Internal link</span></a>
+						<a class="info" id="projectSixInternal"><span>View</span></a>
 						<p>Ajax</p>
 					</div>
 				</div>
@@ -135,6 +129,9 @@
 				
 				<div id="projectLoaded"></div>
 			</div>
+
+			
+
 		</div>		
 	</div>
 
@@ -143,6 +140,7 @@
 		<a href="https://github.com/jkruhak" target="_blank"><img src="images/github.png" alt="Github link image"></a>
 		<a href="https://www.linkedin.com/pub/jasmina-kruhak/20/677/818" target="_blank"><img src="images/linkedin.png" alt="Linkedin link image"></a>
 		<a href="mailto:jkruhak@gmail.com"><img src="images/gmail.png" alt="Gmail link image"></a>
+		<a href="#" class="backToTop"><img src="images/backToTop.png"></a>
 	</footer>
 </div>
 </body>
