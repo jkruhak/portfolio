@@ -18,8 +18,6 @@ $(document).ready(function(){
 	});
 
 	$(document).on("click", function() {
-		
-			
 		$("#projectList").animate({
 		"opacity": "show"}, 1500);
 
@@ -31,7 +29,7 @@ $(document).ready(function(){
 		projectLoad();
 
 		$("#projectLoaded").html("<object type='text/html' data='http://jkruhak.github.io/shoppingListApp/main.html'></object>");
-		$("#projectName").prepend("<a href='http://jkruhak.github.io/shoppingListApp/main.html' target='_blank'><h3>Shopping List App</h3></a><br><p>A shopping list to help you remember what to get on your next shopping trip</p>");
+		$("#projectName").prepend("<h3><a href='http://jkruhak.github.io/shoppingListApp/main.html' target='_blank' class='projectTitle'>Shopping List App</a></h3><br><p>A shopping list to help you remember what to get on your next shopping trip</p>");
 	});
 
 	//Load Fizz Buzz App in window when link clicked
@@ -39,7 +37,7 @@ $(document).ready(function(){
 		projectLoad();
 
 		$("#projectLoaded").html("<object type='text/html' data='http://jkruhak.github.io/FizzBuzz2/main.html'></object>");
-		$("#projectName").prepend("<a href='http://jkruhak.github.io/FizzBuzz2/main.html' target='_blank'><h3>Fizz Buzz App</h3></a><br><p>A simple app that outputs phrases or numbers based on the input.</p>");
+		$("#projectName").prepend("<h3><a href='http://jkruhak.github.io/FizzBuzz2/main.html' target='_blank' class='projectTitle'>Fizz Buzz App</a></h3><br><p>A simple app that outputs phrases or numbers based on the input.</p>");
 	});
 
 	//Load Hot or Cold App in window when link clicked
@@ -47,7 +45,7 @@ $(document).ready(function(){
 		projectLoad();
 		
 		$("#projectLoaded").html("<object type='text/html' data='http://jkruhak.github.io/hot-or-cold-app/index.html'></object>");
-		$("#projectName").prepend("<a href='http://jkruhak.github.io/hot-or-cold-app/index.html' target='_blank'><h3>Hot or Cold App</h3></a><br><p>You against the computer. See how many tries it takes you to guess the number computer has chosen.</p>");
+		$("#projectName").prepend("<h3><a href='http://jkruhak.github.io/hot-or-cold-app/index.html' target='_blank' class='projectTitle'>Hot or Cold App</a></h3><br><p>You against the computer. See how many tries it takes you to guess the number computer has chosen.</p>");
 	});
 
 	//Load Quiz App in window when link clicked
@@ -55,7 +53,7 @@ $(document).ready(function(){
 		projectLoad();
 
 		$("#projectLoaded").html("<object type='text/html' data='http://jkruhak.github.io/quizApp/index.html'></object>");
-		$("#projectName").prepend("<a href='http://jkruhak.github.io/quizApp/index.html' target='_blank'><h3>Quiz App</h3></a><br><p>A quiz to test your M*A*S*H knowledge.</p>");
+		$("#projectName").prepend("<h3><a href='http://jkruhak.github.io/quizApp/index.html' target='_blank' class='projectTitle'>Quiz App</a></h3><br><p>A quiz to test your M*A*S*H knowledge.</p>");
 	});
 
 	//Load Stackoverflow Top Answerers App in window when link clicked
@@ -63,7 +61,7 @@ $(document).ready(function(){
 		projectLoad();
 
 		$("#projectLoaded").html("<object type='text/html' data='http://jkruhak.github.io/topAnswerers/index.html'></object>");
-		$("#projectName").prepend("<a href='http://jkruhak.github.io/topAnswerers/index.html' target='_blank'><h3>Stackoverflow API Hack</h3></a><br><p>Get top answerers for a topic of your choice from Stackoverflow.</p>");
+		$("#projectName").prepend("<h3><a href='http://jkruhak.github.io/topAnswerers/index.html' target='_blank' class='projectTitle'>Stackoverflow API Hack</a></h3><br><p>Get top answerers for a topic of your choice from Stackoverflow.</p>");
 	});
 
 	//Load API Hack App in window when link clicked
@@ -71,7 +69,7 @@ $(document).ready(function(){
 		projectLoad();
 
 		$("#projectLoaded").html("<object type='text/html' data='http://jkruhak.github.io/apiHack/index.html'></object>");
-		$("#projectName").prepend("<a href='http://jkruhak.github.io/apiHack/index.html' target='_blank'><h3>Weather Station API Hack</h3></a><br><p>Get weather from anywhere in the world with this Weather Station API.</p>");
+		$("#projectName").prepend("<h3><a href='http://jkruhak.github.io/apiHack/index.html' target='_blank' class='projectTitle'>Weather Station API Hack</a></h3><br><p>Get weather from anywhere in the world with this Weather Station API.</p>");
 	});
 });
 

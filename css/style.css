@@ -16,6 +16,11 @@ h3 {
 	text-decoration: none;
 }
 
+.projectTitle {
+	color: #fff;
+	font-size: 20px;
+}
+
 .navButton:link, #thinkful:link {
 	color: #000;
 }
@@ -24,7 +29,7 @@ h3 {
 	color: rgb(214, 214, 214);
 }
 
-.navButton:hover, #thinkful:hover {
+.navButton:hover, #thinkful:hover, .projectTitle:hover {
 	color: blue;
 }
 
@@ -215,6 +220,7 @@ button {
 
 #projectName p {
 	font-style: italic;
+	margin-top: 0px;
 }
 
 #projectLoaded {
@@ -231,7 +237,7 @@ object {
 	height: 40px;
 	width: 40px;
 	float: right;
-	margin-top: -50px;
+	margin-top: -30px;
 	z-index: 0;
 }
 
