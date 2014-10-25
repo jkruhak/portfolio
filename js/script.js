@@ -6,6 +6,26 @@ $(document).ready(function(){
 	//animate scroll when clicked on navigation link
 	navigationLink();
 
+	//Back to Top button
+	backToTopButton();
+	
+	//Close project when X clicked
+	projectClose();
+
+	//Close project when clicked anywhere on page
+	$("#portfolio").on("click", function(event) {
+		event.stopPropagation();
+	});
+
+	$(document).on("click", function() {
+		
+			
+		$("#projectList").animate({
+		"opacity": "show"}, 1500);
+
+		$("#loadedProject").hide();
+	});
+
 	//Load Shopping List App in window when link clicked
 	$("#projectOneInternal").on("click", function() {
 		projectLoad();
@@ -53,14 +73,6 @@ $(document).ready(function(){
 		$("#projectLoaded").html("<object type='text/html' data='http://jkruhak.github.io/apiHack/index.html'></object>");
 		$("#projectName").prepend("<a href='http://jkruhak.github.io/apiHack/index.html' target='_blank'><h3>Weather Station API Hack</h3></a><br><p>Get weather from anywhere in the world with this Weather Station API.</p>");
 	});
-
-	projectClose();
-
-	//close project when clicked anywhere on page
-
-
-	//Back to Top button
-	backToTopButton();
 });
 
 //Animate project loading into window
@@ -105,6 +117,7 @@ var backToTopButton = function() {
 	});
 };
 
+//Navigation link scroll
 var navigationLink = function() {
 	$('a[href^="#"]:not([href=#])').on('click',function(event) {
 	    event.preventDefault();
