@@ -248,6 +248,7 @@ span {
 
 .projectHover img {
 	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
 }
 
 .projectHover .change {
@@ -257,7 +258,9 @@ span {
 	height: 300px;
 	opacity: 0;
 	transform: translate(265px, 145px) rotate(45deg);
+	-webkit-transform: translate(265px, 145px) rotate(45deg);
     transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
 }
 
 .projectHover h2 {
@@ -268,21 +271,28 @@ span {
     transform: translate(200px, -200px);
     -webkit-transform: translate(200px, -200px);
     transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
 }
 
 .projectHover p {
     transform: translate(-300px, 300px);
+    -webkit-transform: translate(300px, -300px);
     transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
 }
 
-.projectHover a.info { 
+.projectHover a.info {
     transform: translate(0px, 500px);
+    -webkit-transform: translate(0px, 500px);
     transition: all 0.2s 0.1s ease-in-out;
+    -webkit-transition: all 0.2s 0.1s ease-in-out;
 }
 
 .projectHover:hover h2, .projectHover:hover p, .projectHover:hover a.info {
     transform: translate(0px,0px);
+    -webkit-transform: translate(0px,0px);
     transition-delay: 0.2s;    
+    -webkit-transition-delay: 0.2s;
 }
 
 .projectHover:hover .change { 
